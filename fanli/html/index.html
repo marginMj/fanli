@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="../js/index.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/cookie.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<!--<div id="header">
+    <div id="head">
+    <a href="javascript:;">
+        <img src="../img/title_bg.jpg" alt="">
+    </a>
+</div>
+</div>-->
+<div id="topbarer">
+    <div id="topbar" class="clear">
+        <ul class="topbar_left left">
+            <li class="fore">
+                <a href="login.html">您好,马上登录 <i class="arrow"></i></a>
+                <div class="menu-login">
+                    <em></em>
+                    <ul>
+                        <li><a href="javascript:;">返利登录</a></li>
+                        <li><a href="javascript:;">淘宝登录</a></li>
+                        <li><a href="javascript:;">QQ登录</a></li>
+                        <li><a href="javascript:;">新浪登录</a></li>
+                        <li><a href="javascript:;">微信登录</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li><a href="register.html">免费注册</a></li>
+        </ul>
+        <ul class="topbar_right right">
+            <li class="fore">
+                <a href="#">返利导购 <i class="arrow"></i></a>
+                <div class="menu-login">
+                    <em></em>
+                    <ul>
+                        <li><a href="javascript:;">超级返</a></li>
+                        <li><a href="javascript:;">商场返利</a></li>
+                        <li><a href="javascript:;">淘宝返利</a></li>
+                        <li><a href="javascript:;">旅行返利</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore">
+                <a href="#">手机返利 <i class="arrow"></i></a>
+                <div class="menu-login phone-fl">
+                    <em></em>
+                    <div class="ewm1 left">
+                        <img src="../img/client-fanli-v3.png" alt="">
+                        返利客户端
+                    </div>
+                    <div class="ewm2 left">
+                        <a href="" class="ios">
+                            <i></i>ios版
+                        </a>
+                        <a href="" class="android">
+                            <i></i>android版
+                        </a>
+                    </div>
+                    <div class="ewm3 left">
+                        <img src="../img/client-weixin-v4.png" alt="">
+                        返利官方微信
+                    </div>
+                    <div class="ewm4 left">关注返利网官方微信，返利到账早知道</div>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore"><a href="#">9块9</a></li>
+            <li class="fore"><a href="#">公益返利</a></li>
+            <li class="fore"><a href="#">有奖邀请</a></li>
+            <li class="fore"><a href="#">F币商城</a></li>
+            <li class="spacer"></li>
+            <li class="fore"><a href="#">商家报名</a></li>
+            <li class="spacer"></li>
+            <li class="fore mar">
+                <a href="#">帮助中心</a>
+                <div class="menu-login">
+                    <em></em>
+                    <ul>
+                        <li><a href="javascript:;">在线客服</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="wrap" class="clear">
+    <div id="title">
+        <div class="logo left">
+            <a href="#"><img src="../img/logo.png" alt=""></a>
+        </div>
+        <div id="search" class="left">
+            <form action="">
+                <div id="search-box">
+                    <input id="search-content" name="search-content" type="text">
+                    <ul id="search-list"></ul>
+                </div>
+                <input id="search-btn" name="search-btn" type="button" value="搜索">
+            </form>
+        </div>
+        <div class="phone right">
+            <a href="javascript:;"><img src="../img/iphone.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<div id="naver" class="clear">
+    <div id="nav">
+        <ul>
+            <li class="color"><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">超级返</a><em></em></li>
+            <li><a href="javascript:;">淘宝返利</a><em></em></li>
+            <li><a href="javascript:;">商城返利</a><em></em></li>
+            <li><a href="javascript:;">今日值得买</a><em></em></li>
+            <li><a href="javascript:;">9块9</a><em></em></li>
+            <li class="ico-po"><a href="javascript:;">邀请有奖 <i class="ico"></i><em></em></a></li>
+        </ul>
+    </div>
+</div>
+<!--头部结束-->
+<!--主体开始-->
+<div id="content">
+    <div id="main">
+        <div class="clear">
+            <ul class="logo-list">
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_1.png" alt="">最高返利36%</a>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_2.png" alt="">最高返利5.6%</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_3.png" alt="">最高返利2.8%</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_4.png" alt="">最高返利36%</a>
+
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_5.png" alt="">最高返利15%</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_6.png" alt="">最高返利4.2%</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_7.png" alt="">最高返利2.8%</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_8.png" alt="">最高返利4倍F币</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_9.png" alt="">最高返利6%</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_10.png" alt="">最高返利36%</a>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_11.png" alt="">最高返利3.5%</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_12.png" alt="">最高返利2倍F币</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_13.png" alt="">最高返利3.5%</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_14.png" alt="">最高返利3.5倍F币</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="logo-li" href="javascript:;">
+                <a href="javascript:;"><img src="../img/logo_15.jpg" alt="">最高返利4%</a>
+
+                <div class="info">
+                    <a class="buy" href="javascript:;">直接购物</a>
+                    <a class="det" href="javascript:;">返利详情</a>
+                </div>
+            </li>
+            <li class="gt logo-li" href="javascript:;"><a href="javascript:;"> > </a></li>
+        </ul>
+        </div>
+        <div id="tab-content">
+            <!--选项卡-->
+            <div id="tab" class="tab-title clear">
+                <ul>
+                    <li class="current"><a class="huan1" href="javascript:;"><strong>超级返</strong> / 每日10点上新</a></li>
+                    <li ><a class="huan2" href="javascript:;"><strong>9块9</strong></a></li>
+                </ul>
+            </div>
+            <div class="tab-body clear">
+                <!--超级返-->
+                <div class="tab-child cjf">
+                    <div id="all" class="cjf-left left">
+                    </div>
+                    <div class="cjf-right right">
+                        <div class="rig-top comm">
+                            <div class="tabs">
+                                <ul>
+                                    <li><a class="current" href="javascript:;">超级返宣言</a></li>
+                                    <li><a href="javascript:;">服务保障</a></li>
+                                </ul>
+                            </div>
+                            <div class="panel display"><img src="../img/tab1.png" alt=""></div>
+                            <div class="panel"><img src="../img/tab2.png" alt=""></div>
+                        </div>
+                        <div class="rig-mid comm">
+                            <a href="javascript:;"><img src="../img/lenovo.jpg" alt=""></a>
+                        </div>
+                        <div class="rig-bot comm">
+                            <div class="tabs clear">
+                                <ul>
+                                    <li><a class="current" href="javascript:;">每日限量抢</a></li>
+                                </ul>
+                            </div>
+                            <div class="xl">
+                                <div class="limit">
+                                    <a href="javascript:;">
+                                        <img src="../img/limit1.jpg" alt="">
+                                        <p class="flag">
+                                            <span class="zk"> <em>返利53%</em><strong>2.6</strong>折</span>
+                                        </p>
+                                        <p class="name">买一送五，新七白美白保湿护肤礼盒，同步店铺买赠</p>
+                                        <p class="info">
+                                            <strong>￥199.00</strong>
+                                            <del>￥360</del>
+                                        </p>
+                                        <p class="fl">购买后返利: <strong>105.47</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--9块9-->
+                <div class="tab-child nine">
+                    <div class="con-head">
+                        <div class="con-nav">
+                            <ul>
+                                <li class="fore"><a href="javascript:;">全部</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="list.html">女装</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">居家</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">3C配件</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">小家电</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">男装</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">美食</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">母婴</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">鞋包</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">美妆</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">运动服饰</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">运动户外</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">配饰</a></li>
+                                <li class="spacer"></li>
+                                <li class="fore"><a href="javascript:;">中老年</a></li>
+                                <li class="fore"><a href="javascript:;">9.9包邮</a></li>
+                            </ul>
+                        </div>
+                        <div class="con-title">
+                            <div class="updata left">今日已更新 <strong>602</strong>款</div>
+                            <div class="sort right">
+                                <span>排序</span>
+                                <a class="btn-sort color" href="javascript:;">默认</a><a class="btn-sort" href="javascript:;">最新</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nine-box" class="nine-main clear">
+
+
+
+                        <div class="nine-item">
+                            <a class="bor" href="javascript:;"></a>
+                            <img src="../img/nine1.jpg" alt="">
+                            <p class="by">【包邮】【9.9纸巾团】维达海绵宝宝手帕纸3层20包</p>
+                            <div class="money">
+                                <div class="mo1 left">
+                                    ￥<strong>9 <em>.9</em></strong>
+                                </div>
+                                <div class="mo2 left"><del>￥25</del></div>
+                                <div class="mo3 right">
+                                    <img src="../img/t.png" alt="">
+                                    <p>已售718</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div id="loading">
+                        <img src="../img/load.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体结束-->
+<!--页脚上部分开始-->
+<div id="faq-area">
+    <div id="faq">
+        <div class="ensure clear">
+            <ul>
+                <li><i class="ico-ensure1"></i>电商导购<br>特卖平台</li>
+                <li><i class="ico-ensure2"></i>400多家电<br>商合作伙伴</li>
+                <li><i class="ico-ensure3"></i>12000多个品<br>牌合作伙伴</li>
+                <li><i class="ico-ensure4"></i>口碑信赖超<br>1亿用户</li>
+                <li><i class="ico-ensure5"></i>每月返利金<br>额超过一亿元</li>
+                <li><i class="ico-ensure6"></i>7*14小时<br>客户服务</li>
+            </ul>
+        </div>
+        <div class="list clear">
+            <dl class="faq-col">
+                <dt>使用帮助</dt>
+                <dd>
+                    <a href="javascript:;">什么是返利</a>
+                    <a href="javascript:;">淘宝购物如何返利</a>
+                    <a href="javascript:;">商城购物如何返利</a>
+                    <a href="javascript:;">怎么用返利</a>
+                </dd>
+            </dl>
+            <dl class="faq-col">
+                <dt>超级返</dt>
+                <dd>
+                    <a href="javascript:;">什么是超级返</a>
+                    <a href="javascript:;">超级返返利秘籍</a>
+                    <a href="javascript:;">超级返其他问题</a>
+
+                </dd>
+            </dl>
+            <dl class="faq-col">
+                <dt>订单</dt>
+                <dd>
+                    <a href="javascript:;">订单何时出现在返利网</a>
+                    <a href="javascript:;">没有看到订单怎么办</a>
+                    <a href="javascript:;">订单何时返利</a>
+
+                </dd>
+            </dl>
+            <dl class="faq-col">
+                <dt>返利/F币</dt>
+                <dd>
+                    <a href="javascript:;">什么是F币，有什么用</a>
+                    <a href="javascript:;">返利何时到账</a>
+                    <a href="javascript:;">其他返利问题</a>
+                </dd>
+            </dl>
+            <dl class="faq-col">
+                <dt>兑现</dt>
+                <dd>
+                    <a href="javascript:;">如何申请兑现</a>
+                    <a href="javascript:;">兑现多久到账</a>
+                </dd>
+            </dl>
+            <dl class="faq-col faq-col-last">
+                <dt>商家合作</dt>
+                <dd>
+                    <a href="javascript:;">合作伙伴</a>
+                    <a href="javascript:;">商务合作</a>
+                    <a href="javascript:;">广告服务</a>
+                    <a href="javascript:;">友情链接</a>
+                </dd>
+            </dl>
+
+        </div>
+        <div class="app clear">
+            <div class="app-ewm">
+                <div class="comm appfl"></div>
+                <dl>
+                    <dt class="title">返利网手机端</dt>
+                    <dd class="subtitle">手机返利，随时随地</dd>
+                    <dd>
+                        <a href="javascript:;">
+                            <i class="ico-andriod"></i>
+                            Andriod版
+                        </a>
+                        <a href="javascript:;">
+                            <i class="ico-ios"></i>
+                            iOS版
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="app-ewm">
+                <div class="comm appqx"></div>
+                <dl>
+                    <dt class="title">返利网旗下-9块9</dt>
+                    <dd class="subtitle">只买对的，不买贵的</dd>
+                    <dd>
+                        <a href="javascript:;">
+                            <i class="ico-andriod"></i>
+                            Andriod版
+                        </a>
+                        <a href="javascript:;">
+                            <i class="ico-ios"></i>
+                            iOS版
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="app-ewm">
+                <div class="comm appwx"></div>
+                <dl>
+                    <dt class="title">返利网官方微信</dt>
+                    <dd class="subtitle">扫描二维码，即刻与返利网官方微信互动，优惠资讯不再错过。</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页脚上部分结束-->
+
+<div id="footer">
+    <div id="foot">
+        <ul class="ft-nav">
+            <li><a href="javascript:;">关于返利网</a></li>
+            <li><a href="javascript:;">人才招聘</a></li>
+            <li><a href="javascript:;">隐私政策</a></li>
+            <li><a href="javascript:;">媒体报道</a></li>
+            <li><a href="javascript:;">网站导航</a></li>
+        </ul>
+        <ul class="ft-logos">
+            <li><a class="tu1" href="javascript:;"></a></li>
+            <li><a class="tu2" href="javascript:;"></a></li>
+            <li><a class="tu3" href="javascript:;"></a></li>
+            <li><a class="tu4" href="javascript:;"></a></li>
+        </ul>
+        <p>Copyright © 返利网 2006-2016, All Rights Reserved. <a href="javascript:;">沪ICP备08109440</a></p>
+    </div>
+</div>
+<!--左侧-->
+<div id="magicbar">
+    <a id="mar-show" href="javascript:;">
+        <span class="mod"></span>
+    </a>
+    <div id="mbar">
+        <div class="mbar-bd">
+            <ul class="cl">
+                <li class="zh">
+                    <a href="javascript:;"><i class="my"></i><span>我的账号</span></a>
+                    <div class="mbar-box">
+                        <div class="mbar-login">
+                            <div class="mbar-login-row clear">
+                                <div class="mbar-row1">
+                                    <label class="left bold">账号：</label>
+                                    <label class="right"><a href="javascript:;">手机动态密码登录</a><i class="green-iphone"></i></label>
+                                </div>
+                                <div class="mbar-row2">
+                                    <input type="text" placeholder="用户名/邮箱">
+                                </div>
+                            </div>
+                            <div class="mbar-login-row clear">
+                                <div class="mbar-row1">
+                                    <label class="left bold">密码：</label>
+                                </div>
+                                <div class="mbar-row2">
+                                    <input type="password" >
+                                </div>
+                            </div>
+                            <!--<div class="mbar-login-row yzm clear">
+                                <span class="yzm-input">
+                                    <input type="text" placeholder="验证码">
+                                </span>
+                                <a class="yzm-con" href="javascript:;">
+                                    <img src="../img/verify.png" alt="">
+                                </a>
+                                <span class="up-con"><a href="javascript:;">看不清 <br>换一张</a></span>
+                            </div>-->
+                            <div class="mbar-login-row dl clear">
+                                <a class="lo-btn" href="javascript:;">登&nbsp;&nbsp;录</a>
+                                <span class="mf"><a href="javascript:;">免费注册</a></span>
+                            </div>
+                        </div>
+                        <i class="sj"></i>
+                    </div>
+                </li>
+                <li class="xx"><a href="javascript:;"><i class="mynew"></i><i class="ico-msg"></i><span>我的消息</span></a></li>
+                <li class="dialog"><a href="javascript:;"><i class="online"></i><span>在线客服</span></a></li>
+            </ul>
+        </div>
+        <a id="mbarclose" class="mbarcl" href="javascript:;"> × </a>
+    </div>
+</div>
+<div id="fg">
+    <div class="kf">
+        <h3 class="zs"></h3>
+        <a class="fg-close" href="javascript:;"> × </a>
+    </div>
+    <div class="xf">
+        <div class="xf-con">
+            <div class="ques clear">
+                <div class="chat-ico"></div>
+                <div class="chat-panel clear">
+                    <i class="arrow"></i>
+                    亲，你好，我是客服小溪。有什么可以帮您吗？
+                    <div class="char-list">
+                        <h3>请选择问题</h3>
+                        <ul class="q-list">
+                            <li><a class="orange" href="javascript:;">下了超级返订单，为啥没看到？要怎么申请理赔？</a></li>
+                            <li><a class="orange" href="javascript:;">购买多件超级返商品如何返利？</a></li>
+                            <li><a class="green" href="javascript:;">超级返使用优惠券、红包、天猫积分等是否影响返利？</a></li>
+                            <li><a class="green" href="javascript:;">账户绑定信息时，提示该信息已经被绑定，怎么办？</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="xf-help">
+            <span class="kf-status">都不能解决你的问题？请点击</span>
+            <a href="javascript:;"><img src="../img/kf.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<div id="zz"></div>
+<!--左侧-->
+
+<!--右侧开始-->
+<!--<div id="ksw">
+    <img src="../img/tdc-v2.alpha.png" alt="">
+</div>-->
+
+<div id="backtop">
+    <a href="javascript:;">返回顶部</a>
+</div>
+<!--右侧结束-->
+</body>
+</html>

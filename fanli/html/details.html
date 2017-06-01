@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
+    <link rel="stylesheet" href="../css/taobao.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="../js/common.js"></script>
+    <script src="../js/details.js"></script>
+</head>
+<body>
+
+<!--头部开始-->
+<!--<div id="header">
+    <div id="head">
+    <a href="javascript:;">
+        <img src="../img/title_bg.jpg" alt="">
+    </a>
+</div>
+</div>-->
+<div id="topbarer">
+    <div id="topbar" class="clear">
+        <ul class="topbar_left left">
+            <li class="fore">
+                <a href="login.html">您好,马上登录 <i class="arrow"></i></a>
+                <div class="menu-login">
+                    <em></em>
+                    <ul>
+                        <li><a href="javascript:;">返利登录</a></li>
+                        <li><a href="javascript:;">淘宝登录</a></li>
+                        <li><a href="javascript:;">QQ登录</a></li>
+                        <li><a href="javascript:;">新浪登录</a></li>
+                        <li><a href="javascript:;">微信登录</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li><a href="register.html">免费注册</a></li>
+        </ul>
+        <ul class="topbar_right right">
+            <li class="fore">
+                <a href="#">返利导购 <i class="arrow"></i></a>
+                <div class="menu-login">
+                    <em></em>
+                    <ul>
+                        <li><a href="javascript:;">超级返</a></li>
+                        <li><a href="javascript:;">商场返利</a></li>
+                        <li><a href="javascript:;">淘宝返利</a></li>
+                        <li><a href="javascript:;">旅行返利</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore">
+                <a href="#">手机返利 <i class="arrow"></i></a>
+                <div class="menu-login phone-fl">
+                    <em></em>
+                    <div class="ewm1 left">
+                        <img src="../img/client-fanli-v3.png" alt="">
+                        返利客户端
+                    </div>
+                    <div class="ewm2 left">
+                        <a href="" class="ios">
+                            <i></i>ios版
+                        </a>
+                        <a href="" class="android">
+                            <i></i>android版
+                        </a>
+                    </div>
+                    <div class="ewm3 left">
+                        <img src="../img/client-weixin-v4.png" alt="">
+                        返利官方微信
+                    </div>
+                    <div class="ewm4 left">关注返利网官方微信，返利到账早知道</div>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore"><a href="#">9块9</a></li>
+            <li class="fore"><a href="#">公益返利</a></li>
+            <li class="fore"><a href="#">有奖邀请</a></li>
+            <li class="fore"><a href="#">F币商城</a></li>
+            <li class="spacer"></li>
+            <li class="fore"><a href="#">商家报名</a></li>
+            <li class="spacer"></li>
+            <li class="fore mar">
+                <a href="#">帮助中心</a>
+                <div class="menu-login">
+                    <em></em>
+                    <ul>
+                        <li><a href="javascript:;">在线客服</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="wrap" class="clear">
+    <div id="title">
+        <div class="logo left">
+            <a href="#"><img src="../img/logo.png" alt=""></a>
+        </div>
+        <div id="search" class="left">
+            <form action="">
+                <div id="search-box">
+                    <input id="search-content" name="search-content" type="text">
+                    <ul id="search-list"></ul>
+                </div>
+                <input id="search-btn" name="search-btn" type="button" value="搜索">
+            </form>
+        </div>
+        <div class="phone right">
+            <a href="javascript:;"><img src="../img/iphone.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<div id="naver" class="clear">
+    <div id="nav">
+        <ul>
+            <li class="color"><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">超级返</a><em></em></li>
+            <li><a href="javascript:;">淘宝返利</a><em></em></li>
+            <li><a href="javascript:;">商城返利</a><em></em></li>
+            <li><a href="javascript:;">今日值得买</a><em></em></li>
+            <li><a href="javascript:;">9块9</a><em></em></li>
+            <li class="ico-po"><a href="javascript:;">邀请有奖 <i class="ico"></i><em></em></a></li>
+        </ul>
+    </div>
+</div>
+<!--头部结束-->
+<!--<div id="cart-content">
+    <div id="cart-main">
+        <div class="tb-head">
+            <h1 class="talogo left">
+                <a href="javascript:;">
+                    淘宝网
+                    <span></span>
+                </a>
+            </h1>
+            <div class="search right">
+                <form action="">
+                    <div class="search-btn">
+                        <button type="submit" class="btn-search">搜索</button>
+                    </div>
+                    <div class="search-panel">
+                        <div class="search-combobox">
+                            <div class="search-combobox-input clear">
+                                <input type="text" id="q" name="q" autocomplete="off" class="search-combobox">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>-->
+<div id="details-content">
+    <div id="deta-main">
+        <div class="td-detail-bd clear">
+            <div class="tb-summary clear">
+                <div class="tb-item-info-l">
+                    <div class="tb-gallery">
+                        <ul id="fdj-origin">
+                            <li class="fdj-active"><a href="javascript:;"><img src="../img/fdj_1.jpg" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="../img/fdj_2.jpg" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="../img/fdj_3.jpg" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="../img/fdj_4.jpg" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="../img/fdj_5.jpg" alt=""></a></li>
+                            <div id="move"></div>
+                        </ul>
+                        <ul id="fdj-list">
+                            <li class="fdj-select"><img src="../img/fdj_1.jpg" alt=""></li>
+                            <li><img src="../img/fdj_2.jpg" alt=""></li>
+                            <li><img src="../img/fdj_3.jpg" alt=""></li>
+                            <li><img src="../img/fdj_4.jpg" alt=""></li>
+                            <li><img src="../img/fdj_5.jpg" alt=""></li>
+                        </ul>
+                        <ul id="fdj-bigger">
+                            <li><a href="javascript:;"><img src="../img/fdj_1.jpg" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="../img/fdj_2.jpg" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="../img/fdj_3.jpg" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="../img/fdj_4.jpg" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="../img/fdj_5.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="tb-social">
+                        <ul>
+                            <li class="tb-social-fav">
+                                <a href="javascript:;">
+                                    <i class="tb-icon"></i>
+                                    收藏宝贝
+                                    <em class="favcount">(6862人气)</em>
+                                </a>
+                            </li>
+                            <li class="tb-social-split"></li>
+                            <li CLASS="tb-social-share">
+                                <a href="javascript:;">
+                                    <i class="tb-icon"></i>
+                                    分享
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tb-item-info-r">
+                    <div class="tb-title">
+                        <h3 class="tb-main-title">
+                            2016春秋装新款韩版大码宽松小碎花雪纺衬衫女印花衬衣上衣T恤潮
+                        </h3>
+                        <p class="tb-subtitle">热卖ing</p>
+                        <div class="tb-editor-menu">
+                            <div class="tb-report">
+                                <div class="tb-report-hd">举报</div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="tb-meta">
+                        <li class="tb-detail-price">
+                            <span class="tb-property-ty">价格</span>
+                            <div class="tb-property-cont">
+                                <strong>
+                                    <em class="tb-rmb">￥</em>
+                                    <em class="tb-rmb-num">219.90</em>
+                                </strong>
+                            </div>
+                        </li>
+                        <li class="tb-detail-price">
+                            <span class="tb-property-ty">淘宝价</span>
+                            <div class="tb-property-cont">
+                                <div class="tb-promo-item-bd">
+                                    <strong class="tb-promo-price">
+                                        <em class="tb-rmb">￥</em>
+                                        <em class="tb-rmb-num">29.90</em>
+                                    </strong>
+                                    <span class="tb-promo-ty">质量已验证</span>
+                                    <!--<span class="tb-promo-ty"></span>-->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="tb-other-discount">
+                                <div class="tb-coin">
+                                    <div class="tb-other-discount-content">
+                                        <i class="tb-icon-coin"></i>
+                                        淘金币可抵
+                                        <strong>0.29</strong>
+                                        元
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tb-counter">
+                            <div class="tb-conter-bd">
+                                <div class="tb-rate-counter">
+                                    <a href="javascript:;">
+                                        <strong>611</strong>
+                                        <span>累计评论</span>
+                                    </a>
+                                </div>
+                                <div class="tb-sell-counter">
+                                    <a href="javascript:;">
+                                        <strong>583</strong>
+                                        <span>交易成功</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="logistic">
+                        <div class="tb-logistic clear">
+                            <span class="tb-name tb-property-ty left">配送</span>
+                            <div class="tb-logistic-info left">
+                                <div class="wl-areainfo">
+                                    <span class="wl-areacon">
+                                        <span>广东广州</span>
+                                        至
+                                        <span class="wl-addressinfo">
+                                            河南郑州
+                                            <s></s>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="wl-serviceinfo">
+                                    <span class="wl-servicetitle">
+                                    快递 免运费
+                                    <s></s>
+                                    </span>
+                                </div>
+                                <div class="wl-serviceinfo">
+                                    <span class="servicemarkinfo"> 卖家承诺48小时内发货</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sep-line"></div>
+                    <div class="tb-key tb-key-sku">
+                        <div class="tb-skin">
+                            <dl class="tb-prop clear">
+                                <dt class="tb-property-ty">尺码</dt>
+                                <dd>
+                                    <ul class="saleprop salesize">
+                                        <li data-size="尺寸:S">
+                                            <a href="javascript:;">
+                                                <span>S</span>
+                                                <i>已选中</i>
+                                            </a>
+                                        </li>
+                                        <li data-size="尺寸:M">
+                                            <a href="javascript:;">
+                                                <span>M</span>
+                                                <i>已选中</i>
+                                            </a>
+                                        </li>
+                                        <li data-size="尺寸:L">
+                                            <a href="javascript:;">
+                                                <span>L</span>
+                                                <i>已选中</i>
+                                            </a>
+                                        </li>
+                                        <li data-size="尺寸:XL">
+                                            <a href="javascript:;">
+                                                <span>XL</span>
+                                                <i>已选中</i>
+                                            </a>
+                                        </li>
+                                        <li  data-size="尺寸:XXL">
+                                            <a href="javascript:;">
+                                                <span>XXL</span>
+                                                <i>已选中</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <span class="size-btn">尺码助手</span>
+                            <dl class="tb-prop clear">
+                                <dt class="tb-property-ty">颜色分类</dt>
+                                <dd>
+                                    <ul class="saleprop tb-img">
+                                        <li data-color="颜色分类:白色">
+                                            <a class="tb-sm-icon1" href="javascript:;">
+                                                <span>白色</span>
+                                            </a>
+                                            <i>已选中</i>
+                                        </li>
+                                        <li data-color="颜色分类:蓝色">
+                                            <a class="tb-sm-icon2" href="javascript:;">
+                                                <span>蓝色</span>
+                                            </a>
+                                            <i>已选中</i>
+                                        </li>
+                                        <li class="tb-txt">
+                                            <a href="javascript:;">
+                                                <span>收藏宝贝优先发货</span>
+                                                <i>已选中</i>
+                                            </a>
+                                        </li>
+                                        <li class="tb-txt">
+                                            <a href="javascript:;">
+                                                <span>码数回复正常码数</span>
+                                                <i>已选中</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl class="tb-amount clear">
+                                <dt class="tb-property-t">数量</dt>
+                                <span class="tb-stock">
+                                    <a class="tb-reduce tb-re" href="javascript:;">-</a>
+                                    <input value="1" type="text" class="tb-text">
+                                     <a class="tb-increase" href="javascript:;">+</a>
+                                    件
+                                </span>
+                                <em>
+                                    (库存
+                                    <span class="tb-count">3595</span>
+                                    件)
+                                </em>
+                            </dl>
+                            <div class="tb-sure">
+                                <p class="tb-choice">请勾选您要的商品信息！</p>
+                                <span id="close" class="close">×</span>
+                            </div>
+                            <div class="tb-action clear">
+                                <div class="tb-btn-buy left">
+                                    <a class="linkbuy" href="javascript:;">立即购买</a>
+                                </div>
+                                <div class="tb-btn-add left">
+                                    <a class="linkadd" data-id="1" data-src="../img/goodcart.jpg"
+                                       data-title="2016春秋新款韩版大码宽松小碎花雪纺衬衫女印花衬衣上衣T恤潮" data-price="29.9" data-before-price="219.90"
+                                       data-color="颜色分类：白色" data-size="尺码：S" data-num="1"
+                                       href="javascript:; ">
+                                        <i></i>
+                                        加入购物车
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tb-extra">
+                        <dl class="tb-service-icon">
+                            <dt>承诺</dt>
+                            <dd>
+                                <a href="javascript:;" class="cont">
+                                    <img src="../img/sevenday.jpg" alt="">
+                                    7天无理由
+                                </a>
+                                <a href="javascript:;">
+                                    <i class="tb-icon-charity-con"></i>
+                                    公益宝贝
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>支付</dt>
+                            <dd>
+                                <a href="javascript:;">
+                                    <i class="tb-icon-quick-pay"></i>
+                                    快捷支付
+                                </a>
+                                <a href="javascript:;">
+                                    <i class="tb-icon-credit-card"></i>
+                                    信用卡支付
+                                </a>
+                                <a href="javascript:;">
+                                    <i class="tb-icon-yu"></i>
+                                    余额宝支付
+                                </a>
+                                <a href="javascript:;">
+                                    <i class="tb-icon-hua"></i>
+                                    蚂蚁花呗
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="tb-sidebar clear">
+                <div class="tb-shop-info tb-shop-info-gold-border clear">
+                    <a class="tb-shop-info-bg" href="javascript:;">
+                        <img src="../img/hgmj.png" alt="">
+                    </a>
+                    <div class="tb-shop-info-wrap clear">
+                        <div class="tb-shop-info-hd">
+                            <div class="tb-shop-name">
+                                <dl>
+                                    <dd><strong><a href="javascript:;">谢绝落幕</a></strong></dd>
+                                </dl>
+                            </div>
+                            <div class="tb-shop-rank tb-rank-cap">
+                                <dl>
+                                    <dt>信誉：</dt>
+                                    <dd>
+                                        <a href="javascript:;">
+                                            <i></i>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="tb-shop-seller">
+                                <dl>
+                                    <dt>掌柜：</dt>
+                                    <dd>
+                                        <a href="javascript:;">
+                                           郑晓萍888
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="tb-shop-ww">
+                                <dl>
+                                    <dt>联系：</dt>
+                                    <dd>
+                                        <span class="ww-light ww-large">
+                                            <a href="javascript:;">
+                                                <span>旺旺在线</span>
+                                            </a>
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="tb-shop-icon">
+                                <dl>
+                                    <dt>资质</dt>
+                                    <dd>
+                                        <a class="tb-icon tb-icon-alipay-auth" href="javascript:;"></a>
+                                        <a class="tb-seller-bail" href="javascript:;">
+                                            <span class="tb-icon tb-icon-bail"></span>
+                                            <span class="tb-seller-bail-text">
+                                                1000
+                                                <span class="tb-seller-bail-unit">元</span>
+                                            </span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="tb-shop-info-bd">
+                            <div class="tb-shop-rate">
+                                <dl>
+                                    <dt>描述</dt>
+                                    <dd class="tb-rate-lower">
+                                        <a href="javascript:;">4.6</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>服务</dt>
+                                    <dd class="tb-rate-lower">
+                                        <a href="javascript:;">4.7</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>物流</dt>
+                                    <dd class="tb-rate-equal">
+                                        <a href="javascript:;">4.7</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="tb-shop-info-ft">
+                            <a href="javascript:;">进入店铺</a>
+                            <a href="javascript:;">收藏店铺</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tb-pine">
+                    <div class="tuijian-module tuijian-module-detail-pine clear">
+                        <div class="tuijian-hd clear">
+                            <div class="tuijian-l">
+                                <h2 class="tuijian-label">看了又看</h2>
+                            </div>
+                            <div class="tuijian-r">
+                                <div class="refresh"></div>
+                            </div>
+                        </div>
+                        <div class="tuijian-bd clear">
+                            <ul>
+                                <li class="tuijian-item">
+                                    <div class="tuijian-l">
+                                        <div class="tuijian-img clear">
+                                            <div class="pic-con">
+                                                <a class="img-con" href="javascript:;">
+                                                    <img src="../img/klyk.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="tuijian-price">
+                                            <span class="now-price">
+                                                <b class="yen">￥</b>
+                                                <b class="price">29.90</b>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="tuijian-item">
+                                    <div class="tuijian-l">
+                                        <div class="tuijian-img clear">
+                                            <div class="pic-con">
+                                                <a class="img-con" href="javascript:;">
+                                                    <img src="../img/klyk.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="tuijian-price">
+                                            <span class="now-price">
+                                                <b class="yen">￥</b>
+                                                <b class="price">29.90</b>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="tuijian-item">
+                                    <div class="tuijian-l">
+                                        <div class="tuijian-img clear">
+                                            <div class="pic-con">
+                                                <a class="img-con" href="javascript:;">
+                                                    <img src="../img/klyk.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="tuijian-price">
+                                            <span class="now-price">
+                                                <b class="yen">￥</b>
+                                                <b class="price">29.90</b>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="tuijian-item">
+                                    <div class="tuijian-l">
+                                        <div class="tuijian-img clear">
+                                            <div class="pic-con">
+                                                <a class="img-con" href="javascript:;">
+                                                    <img src="../img/klyk.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="tuijian-price">
+                                            <span class="now-price">
+                                                <b class="yen">￥</b>
+                                                <b class="price">29.90</b>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tb-tabbar-wrap clear">
+            <div class="tb-tabbar-mid-wrap">
+                <div class="tb-shop-search">
+                    <div class="search-panel">
+                        <form action="" class="search-panel-focused">
+                            <div class="search-button">
+                                <button class="tb-iconfont" ></button>
+                            </div>
+                            <div class="search-panel-fields">
+                                <input  type="text" placeholder="搜本店" autocomplete="off">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tb-tabbar-inner-wrap">
+                    <ul class="tb-tabbar clear">
+                        <li class="tb-first selected">
+                            <a href="javascript:;" class="tb-tab-anchor">宝贝详情</a>
+                            <div class="tb-selected-indicator"></div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="tb-tab-anchor">
+                                累计评论
+                                <em class="reviewcount">614</em>
+                            </a>
+                            <div class="tb-selected-indicator"></div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="tb-tab-anchor">
+                              专享服务
+                            </a>
+                            <div class="tb-selected-indicator"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tb-main-layout">
+            <div class="colmain clear">
+                <div class="main-wrap">
+                    <div class="sub-wrap clear">
+                        <div class="tb-welfare-detail">
+                            <div class="charityTreasure">
+                                <div class="imgbox">
+                                <span>
+                                    <img src="../img/gy.jpg" alt="">
+                                </span>
+                                </div>
+                                <div class="infoBox">
+                                    <p class="brief">
+                                        该商品参与了公益宝贝计划，卖家承诺每笔成交将为
+                                        <strong>一校一梦想</strong>
+                                        捐赠
+                                        <strong>0.02元</strong>
+                                        。该商品已累积捐赠
+                                        <strong>996笔</strong>
+                                        。
+                                    </p>
+                                    <p class="use">
+                                        <span class="field">善款用途简介：</span>
+                                        "“一校一梦想” 项目由北京感恩公益基金会实施执行 。
+                                        从尊重受助学校的需求和自主选择出发，将过去“我们愿意支持什么” 转变为“学校需要什么”。..."
+                                        <a href="javascript:;">了解详情>></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attributes clear">
+                            <ul class="attributes-list">
+                                <li>货号:&nbsp;56413</li>
+                                <li>风格:&nbsp;百搭</li>
+                                <li>衣长:&nbsp;常规款</li>
+                                <li>袖长:&nbsp;长袖</li>
+                                <li>袖型:&nbsp;衬衫袖</li>
+                                <li>领型:&nbsp;立领</li>
+                                <li>衣门襟:&nbsp;其他</li>
+                                <li>图案:&nbsp;碎花</li>
+                                <li>服装款式细节:&nbsp;印花</li>
+                                <li>成分含量:&nbsp;81%(含)-90%(含)</li>
+                                <li>质地:&nbsp;其他</li>
+                                <li>年份季节:&nbsp;2016年秋季</li>
+                                <li>颜色分类:&nbsp;收藏宝贝优先发货 码数回复正常码数 白色 蓝色</li>
+                                <li>尺码:&nbsp;S M L XL XXL</li>
+                            </ul>
+                        </div>
+                        <div class="tshop-psm">
+                            <div class="content">
+                                <p>
+                                    <img src="../img/spxq1.jpg" alt="">
+                                    <img src="../img/spxq2.png" alt="">
+                                    <img src="../img/spxq3.jpg" alt="">
+                                    <img src="../img/spxq4.jpg" alt="">
+                                    <img src="../img/spxq5.jpg" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-wrap">
+                        <ul class="kg-rate-nav clear">
+                            <li class="active">宝贝评论</li>
+                            <li>
+                                售后服务评论
+                                <strong>23</strong>
+                            </li>
+                            <li>
+                                问大家
+                                <i class="new-inner ani">&nbsp;</i>
+                            </li>
+                        </ul>
+                        <div class="kg-rate-main">
+                            <div class="kg-rate-detail">
+                                <div class="kgrate-main">
+                                    <div class="kgrate-mainreviews">
+                                        <div class="tb-revhd">
+                                            <div class="tb-r-box">
+                                                <div class="tb-r-ubox">
+                                                    <h3>大家印象:</h3>
+                                                    <ul class="kg-rate-wd-impression">
+                                                        <li>
+                                                            <a href="javascript:;">质量不错(44)</a>
+                                                            <i></i>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">版型很好(31)</a>
+                                                            <i></i>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">穿上好看(26)</a>
+                                                            <i></i>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">衣衣很舒服(25)</a>
+                                                            <i></i>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">划算(17)</a>
+                                                            <i></i>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">物流快(12)</a>
+                                                            <i></i>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">色彩很好(11)</a>
+                                                            <i></i>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">和描述一致(8)</a>
+                                                            <i></i>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">料子很好(7)</a>
+                                                            <i></i>
+                                                        </li>
+                                                        <li class="tb-r-neg">
+                                                            <a href="javascript:;">质量一般(10)</a>
+                                                            <i></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="kg-rate-wd-filter-bar clear">
+                                                <ul class="filtering left">
+                                                    <li class="is-current">
+                                                        <label for="reviews-t-all">
+                                                            <input type="radio" id="reviews-t-all" checked="checked">
+                                                            全部
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="reviews-t-val3">
+                                                            <input type="radio" id="reviews-t-val3">
+                                                            图片
+                                                        <span class="tb-tbcr-num">
+                                                            <span>(64)</span>
+                                                        </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="reviews-t-val4">
+                                                            <input type="radio" id="reviews-t-val4">
+                                                            追评
+                                                        <span class="tb-tbcr-num">
+                                                            <span>(63)</span>
+                                                        </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="reviews-t-val5">
+                                                            <input type="radio" id="reviews-t-val5">
+                                                            好评
+                                                        <span class="tb-tbcr-num">
+                                                            <span>(600)</span>
+                                                        </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="reviews-t-val6">
+                                                            <input type="radio" id="reviews-t-val6">
+                                                            中评
+                                                        <span class="tb-tbcr-num">
+                                                            <span>(64)</span>
+                                                        </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="reviews-t-val7">
+                                                            <input type="radio" id="reviews-t-val7">
+                                                            差评
+                                                        <span class="tb-tbcr-num">
+                                                            <span>(8)</span>
+                                                        </span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                                <div class="sorting">
+                                                    <div class="tb-current">
+                                                        <span class="kgrate-sorttext">推荐排序</span>
+                                                        <i></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tb-revhd">
+                                            <ul id="comments">
+
+                                            </ul>
+                                            <div class="kg-pagination">
+                                                <ul>
+                                                    <li class="pg-prev pg-disabled">上一页</li>
+                                                    <li class="pg-current">1</li>
+                                                    <li>2</li>
+                                                    <li>3</li>
+                                                    <li>4</li>
+                                                    <li>5</li>
+                                                    <li class="pg-next">下一页</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tb-rate-alert">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-wrap">
+                        <div class="service">
+                            <div class="kg-contract">
+                                <h2 class="service-list-title">
+                                    <em>卖家承诺一下服务</em>
+                                </h2>
+                                <ul class="service-list-items">
+                                    <li class="service-item">
+                                        <img class="icon" src="../img/sh1.png" alt="">
+                                        <div class="info">
+                                            <h3 class="name">48小时发货</h3>
+                                            <div class="detail">付款后48小时内发货</div>
+                                        </div>
+                                    </li>
+                                    <li class="service-item">
+                                        <img class="icon" src="../img/sh2.png" alt="">
+                                        <div class="info">
+                                            <h3 class="name">7天无理由退货</h3>
+                                            <div class="detail">
+                                                <p>该商品支持7天无理由退货，自商品签收之日7天内：</p>
+                                                <p>1、商品外包装完整，相关附（配）件齐全；（若有）要求吊牌完整；</p>
+                                                <p>2、商品无显著穿着、无洗涤、无沾染化妆品（如口红等）、无破损等痕迹；</p>
+                                                <p>可申请无理由退货，包邮商品需要买家承担退货邮费，非包邮商品需要买家承担发货和退货邮费。</p>
+                                                <p><a href="javascript:;">查看相关定义和通用说明</a></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="service-item">
+                                        <img class="icon" src="../img/sh3.png" alt="">
+                                        <div class="info">
+                                            <h3 class="name">消费者保障服务</h3>
+                                            <div class="detail">
+                                                该卖家已缴纳1000元保证金
+                                                <p>在确认收货 15 天内，如有商品质量问题、描述不符或未收到货等，您有权申请退款或退货，来回邮费由卖家承担。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-extra">
+                <ul class="tb-vertical-desc"></ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="footer">
+    <div id="foot">
+        <div class="foot-bot">
+            <div class="al clear">
+                <ul class="ul1 left">
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;</a></li>
+                </ul>
+                <ul class="ul2 left">
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+            <div class="gy clear">
+                <ul class="ul1 left">
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;</a></li>
+                </ul>
+                <ul class="ul2 left">
+                    <li><a href="#">文化经营许可证：浙网文[656-654654]</a></li>
+                    <li><a href="#">文化经营许可证：浙网文[656-654654]</a></li>
+                    <li><a href="#">文化经营许可证：浙网文[656-654654]</a></li>
+                    <li><a href="#">文化经营许可证：浙网文[656-654654]</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

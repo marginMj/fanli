@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
+    <link rel="stylesheet" href="../css/taobao.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="../js/cart.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<!--<div id="cart-header">
+    <div id="cart-head">
+        <ul class="tleft left">
+            <li class="li1">
+                <div class="menu-hd">
+                    <a href="javascript:;" class="nick">杯影含珊mj</a>
+                    <a href="javascript:;" class="vip-icon7 vip-icon"></a>
+                    <span class="arrow">
+                    </span>
+                </div>
+                <div class="menu-bd"></div>
+            </li>
+            <li class="l2">
+                    <div class="menu-hd cnews">
+                        <span class="logo-area left">
+                            <span class="xf"></span>
+                            <span class="xx">消息</span>
+                            <span class="num">1</span>
+                        </span>
+                        <span class="arrow"></span>
+                    </div>
+                    <div class="menu-bd"></div>
+
+            </li>
+            <li class="l3">
+                <div class="menu-hd">
+                    <a href="javascrip:;">手机逛淘宝</a>
+                </div>
+            </li>
+
+        </ul>
+        <ul class="tright right">
+            <li class="menu home">
+                <div class="menu-hd">
+                    <a class="h" href="javascript:;">淘宝首页</a>
+                </div>
+            </li>
+            <li class="menu my-taobao">
+                <div class="menu-hd">
+                    <a href="javascript:;">我的淘宝</a>
+                    <span class="arrow"></span>
+                </div>
+                <div class="menu-bd"></div>
+            </li>
+            <li class="menu mini-cart">
+                <div class="menu-hd">
+                    <a href="javascript:;">
+                        <span class="g-icon"></span>
+                        <span>购物车</span>
+                        <strong class="h">1</strong>
+                    </a>
+                    <span class="arrow"></span>
+                </div>
+                <div class="menu-bd"></div>
+            </li>
+            <li class="menu favorite">
+                <div class="menu-hd">
+                    <a href="javascript:;">
+                        <span class="g-icon"></span>
+                        <span>收藏夹</span>
+                    </a>
+                    <span class="arrow"></span>
+                </div>
+            </li>
+            <li class="menu guide">
+                <div class="menu-hd">
+                    <a href="javascript:;">商品分类</a>
+                </div>
+            </li>
+            <li class="site-nav">|</li>
+            <li class="menu seller">
+                <div class="menu-hd">
+                    <a href="javasctipt:;">卖家中心</a>
+                    <span class="arrow"></span>
+                </div>
+
+            </li>
+            <li class="menu service">
+                <div class="menu-hd">
+                    <a href="javasctipt:;">联系客服</a>
+                    <span class="arrow"></span>
+                </div>
+            </li>
+            <li class="menu site-map">
+                <div class="menu-hd">
+                    <a href="javascript:;">
+                        <span class="g-icon"></span>
+                        <span>网站导航</span>
+                    </a>
+                    <span class="arrow"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>-->
+<!--头部开始-->
+<!--<div id="header">
+    <div id="head">
+    <a href="javascript:;">
+        <img src="../img/title_bg.jpg" alt="">
+    </a>
+</div>
+</div>-->
+<div id="topbarer">
+    <div id="topbar" class="clear">
+        <ul class="topbar_left left">
+            <li class="fore">
+                <a href="login.html">您好,马上登录 <i class="arrow"></i></a>
+                <div class="menu-login">
+                    <em></em>
+                    <ul>
+                        <li><a href="javascript:;">返利登录</a></li>
+                        <li><a href="javascript:;">淘宝登录</a></li>
+                        <li><a href="javascript:;">QQ登录</a></li>
+                        <li><a href="javascript:;">新浪登录</a></li>
+                        <li><a href="javascript:;">微信登录</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li><a href="register.html">免费注册</a></li>
+        </ul>
+        <ul class="topbar_right right">
+            <li class="fore">
+                <a href="#">返利导购 <i class="arrow"></i></a>
+                <div class="menu-login">
+                    <em></em>
+                    <ul>
+                        <li><a href="javascript:;">超级返</a></li>
+                        <li><a href="javascript:;">商场返利</a></li>
+                        <li><a href="javascript:;">淘宝返利</a></li>
+                        <li><a href="javascript:;">旅行返利</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore">
+                <a href="#">手机返利 <i class="arrow"></i></a>
+                <div class="menu-login phone-fl">
+                    <em></em>
+                    <div class="ewm1 left">
+                        <img src="../img/client-fanli-v3.png" alt="">
+                        返利客户端
+                    </div>
+                    <div class="ewm2 left">
+                        <a href="" class="ios">
+                            <i></i>ios版
+                        </a>
+                        <a href="" class="android">
+                            <i></i>android版
+                        </a>
+                    </div>
+                    <div class="ewm3 left">
+                        <img src="../img/client-weixin-v4.png" alt="">
+                        返利官方微信
+                    </div>
+                    <div class="ewm4 left">关注返利网官方微信，返利到账早知道</div>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore"><a href="#">9块9</a></li>
+            <li class="fore"><a href="#">公益返利</a></li>
+            <li class="fore"><a href="#">有奖邀请</a></li>
+            <li class="fore"><a href="#">F币商城</a></li>
+            <li class="spacer"></li>
+            <li class="fore"><a href="#">商家报名</a></li>
+            <li class="spacer"></li>
+            <li class="fore mar">
+                <a href="#">帮助中心</a>
+                <div class="menu-login">
+                    <em></em>
+                    <ul>
+                        <li><a href="javascript:;">在线客服</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="wrap" class="clear">
+    <div id="title">
+        <div class="logo left">
+            <a href="#"><img src="../img/logo.png" alt=""></a>
+        </div>
+        <div id="search" class="left">
+            <form action="">
+                <div id="search-box">
+                    <input id="search-content" name="search-content" type="text">
+                    <ul id="search-list"></ul>
+                </div>
+                <input id="search-btn" name="search-btn" type="button" value="搜索">
+            </form>
+        </div>
+        <div class="phone right">
+            <a href="javascript:;"><img src="../img/iphone.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<div id="naver" class="clear">
+    <div id="nav">
+        <ul>
+            <li class="color"><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">超级返</a><em></em></li>
+            <li><a href="javascript:;">淘宝返利</a><em></em></li>
+            <li><a href="javascript:;">商城返利</a><em></em></li>
+            <li><a href="javascript:;">今日值得买</a><em></em></li>
+            <li><a href="javascript:;">9块9</a><em></em></li>
+            <li class="ico-po"><a href="javascript:;">邀请有奖 <i class="ico"></i><em></em></a></li>
+        </ul>
+    </div>
+</div>
+<!--头部结束-->
+
+<div id="cart-content">
+    <div id="cart-main">
+        <!--<div class="tb-head">
+            <h1 class="talogo left">
+                <a href="javascript:;">
+                淘宝网
+                <span></span>
+                </a>
+            </h1>
+            <div class="search right">
+                <form action="">
+                    <div class="search-btn">
+                        <button type="submit" class="btn-search">搜索</button>
+                    </div>
+                    <div class="search-panel">
+                        <div class="search-combobox">
+                            <div class="search-combobox-input clear">
+                                <input type="text" id="q" name="q" autocomplete="off" class="search-combobox">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>-->
+        <div class="cart-hert">
+            <div id="filterBar">
+                <ul id="cartSwitch" class="switch-cart">
+                    <li class="btn-switch-cart switch0 current">
+                        <a href="javascript:;">
+                            <em>全部商品</em>
+                            <span class="number">1</span>
+                            <span class="pipe"></span>
+                        </a>
+                    </li>
+                    <li class="btn-switch-cart">
+                        <a href="javascript:;">
+                            <em>降价商品</em>
+                            <span class="number">0</span>
+                            <span class="pipe"></span>
+                        </a>
+                    </li>
+                    <li class="btn-switch-cart">
+                        <a href="javascript:;">
+                            <em>库存紧张</em>
+                            <span class="number">0</span>
+                            <span class="pipe"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="cart-sum">
+                    <span class="pay-text">已选商品(不含运费)</span>
+                    <strong class="price">
+                        <em id="smallTotal"><span class="total-symbol">&nbsp;</span>0.00</em>
+                    </strong>
+                    <a href="javascript:;" id="smallsubmit" class="submit-btn">结&nbsp;算</a>
+                </div>
+                <div class="wrap-line">
+                    <div class="floater">
+
+                    </div>
+                </div>
+            </div>
+            <div id="CartMain">
+                <div class="cart-table-th">
+                    <div class="wp">
+                        <div class="left th-chk">
+                            <div id="selectAll" class="select-all">
+                                <div class="cart-checkbox">
+                                    <input id="checkBoxShop1" class="checkBoxShop" type="checkbox" name="select-all" value="true">
+                                    <label for="checkBoxShop1">勾选购物车内所有商品</label>
+                                </div>
+                                全选
+                            </div>
+                        </div>
+                        <div class="left th-item">
+                            <div class="td-inner">商品信息</div>
+                        </div>
+                        <div class="left th-price">
+                            <div class="td-inner">单价</div>
+                        </div>
+                        <div class="left th-amount">
+                            <div class="td-inner">数量</div>
+                        </div>
+                        <div class="left th-sum">
+                            <div class="td-inner">金额</div>
+                        </div>
+                        <div class="left th-op">
+                            <div class="td-inner">操作</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="orderList" >
+                    <!--<div id="orderHolder">
+                        <div id="order_s">
+                            <div class="itemHead shop clear">
+                                <div class="shop-info">
+                                    <div class="cart-checkbox">
+                                        <input id="checkBoxShop2" class="checkBoxShop" type="checkbox" name="select-all" value="true">
+                                        <label for="checkBoxShop2">勾选购物车内所有商品</label>
+                                    </div>
+                                    <span class="shop-icon icon-B"></span>
+                                    店铺:
+                                    <a href="javascript:;" class="makepoint">韩鹤旗舰店</a>
+                                    <span class="ww-light ww-small">
+                                        <a class="ww-inline ww-online" href="javascript:;">
+                                            <span>旺旺在线</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="order-content">
+                                <ul class="item-content clear">
+                                    <li class="td td-chk">
+                                        <div class="td-inner">
+                                            <div class="cart-checkbox">
+                                                <input id="checkbox_12" class="checkboxitem" type="checkbox">
+                                                <label for="checkbox_12">勾选商品</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="td td-item">
+                                        <div class="td-inner">
+                                            <div class="item-pic img-loaded">
+                                                <a class="makepoint" href="javascript:;">
+                                                    <img src="" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="item-info">
+                                                <div class="item-basic-info">
+                                                    <a class="item-title" href="javascript:;">2016年春装</a>
+                                                </div>
+                                                <div class="item-other-info">
+                                                    <div class="promo-logos"></div>
+                                                    <div class="item-icon-list clear">
+                                                        <div class="item-icons item-icons-fixed">
+                                                            <span class="item-icon item-icon-0">
+                                                                <img src="../img/xcard.png" alt="">
+                                                            </span>
+                                                            <a href="javascript:;" class="item-icon">
+                                                                <img src="../img/day.jpg" alt="">
+                                                            </a>
+                                                            <a class="item-icon item-icon-2 makepoint" href="javascript:;">
+                                                                <img src="../img/hua.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="td td-info">
+                                        <div class="item-props item-props-can item-props-can-hover">
+                                            <p class="sku-line">颜色分类:白色</p>
+                                            <p class="sku-line">尺码:S</p>
+                                            <span class="btn-edit-sku">修改</span>
+                                        </div>
+                                    </li>
+                                    <li class="td td-price">
+                                        <div class="td-inner">
+                                            <div class="item-price price-promo-promo">
+                                                <div class="price-content">
+                                                    <div class="price-line">
+                                                        <em class="price-origina">￥219.90</em>
+                                                    </div>
+                                                    <div class="price-line">
+                                                        <em class="price-now">￥29.90</em>
+                                                    </div>
+                                                </div>
+                                                <div class="promo-main promo-promo">
+                                                    <div class="promo-content">
+                                                        卖家促销
+                                                        <span class="arrow"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="td td-amount">
+                                        <div class="td-inner">
+                                            <div class="amount-wrapper">
+                                                <div class="item-amount">
+                                                    <a href="javascript:;" class="no-minus">-</a>
+                                                    <input type="text" value="1" class="text text-amount" autocomplete="off">
+                                                    <a href="javascript:;" class="plus">+</a>
+                                                </div>
+                                                <div class="amount-msg"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="td td-sum">
+                                        <div class="td-inner">
+                                            <em class="number">￥59.8</em>
+                                            <div class="lottery"></div>
+                                        </div>
+                                    </li>
+                                    <li class="td td-op">
+                                        <div class="td-inner">
+                                            <a href="javascript:;" class="btn-fav">移入收藏夹</a>
+                                            <a href="javascript:;" class="del">删除</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <div class="float-bar-holder">
+                <div class="float-bar clear default">
+                    <div class="float-bar-wrapper clear">
+                        <div class="select-all">
+                            <div class="cart-checkbox">
+                                <input id="selectallcbx" type="checkbox" class="checkboxshop">
+                                <label for="selectallcbx">勾选购物车内所有商品</label>
+                            </div>
+                            全选
+                        </div>
+                        <div class="operations">
+                            <a href="javascript:;" class="delecteselected">删除</a>
+                            <a href="javascript:;" class="batchfav">移入收藏夹</a>
+                            <a href="javascript:;" class="batchshare">分享</a>
+                        </div>
+                        <div class="float-bar-right">
+                            <div class="amount-sum">
+                                <span class="txt">已选商品</span>
+                                <em id="J_SelectedItemsCount">0</em>
+                                <span class="txt">件</span>
+                            </div>
+                            <div class="price-sum">
+                                <span class="txt"> 合计 ( 不含运费 ) :</span>
+                                <strong class="price">
+                                    <em id="J_Total">0.00</em>
+                                </strong>
+                            </div>
+                            <div class="btn-area">
+                                <a class="submit-btn submit-btn-disabled" href="javascript:;">
+                                    <span>结算</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div id="foot">
+        <div class="foot-bot">
+            <div class="al clear">
+                <ul class="ul1 left">
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">淘宝网&nbsp;&nbsp;</a></li>
+                </ul>
+                <ul class="ul2 left">
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">阿里星球&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+            <div class="gy clear">
+                <ul class="ul1 left">
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">关于淘宝&nbsp;&nbsp;</a></li>
+                </ul>
+                <ul class="ul2 left">
+                    <li><a href="#">文化经营许可证：浙网文[656-654654]</a></li>
+                    <li><a href="#">文化经营许可证：浙网文[656-654654]</a></li>
+                    <li><a href="#">文化经营许可证：浙网文[656-654654]</a></li>
+                    <li><a href="#">文化经营许可证：浙网文[656-654654]</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
